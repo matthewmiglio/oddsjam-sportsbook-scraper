@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "OddsJam Region Scraper",
+  "version": "1.0",
+  "description": "Scrapes sportsbook availability per region from OddsJam",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads"
+  ],
+  "host_permissions": [
+    "*://oddsjam.com/*"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "OddsJam Region Scraper",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
